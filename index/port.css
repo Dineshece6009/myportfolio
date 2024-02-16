@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: antiquewhite;
+
+    
+}
+body{
+    background-color: black;
+}
+a{
+    font-size: 20px;
+    color:antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 3s;
+}
+a:hover{
+    color: blue;
+}
+section{
+    color: antiquewhite;
+    background: url('84c1ff4a-b18d-4db7-bbd0-8e34b72df3d1-removebg-preview.png') no-repeat;
+    opacity: 0.4;
+    background-position: 100%;
+    
+    background-size: 43%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left:  35px;
+    padding-right: 35px;
+}
+.inside{
+    display: inline-block;
+    width: 60%;
+    
+
+}
+.inside h1{
+    font-size: 45px;
+    padding-left: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+   
+}
+.inside h3{
+    font-weight: 700;
+    color:aquamarine ;
+    font-size: 30px;
+    padding-left: 40px;
+}
+.inside p{
+    font-size: 16px;
+    padding-left: 40px;
+    word-spacing: 3px;
+    padding-top: 8px;
+}
+.icon{
+    
+    position: relative;
+    top: 40%;
+    right:57%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    overflow: hidden;
+}
+.icon a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.icon a:hover::before{
+    width: 100%;
+
+}
+.icon a:hover{
+    color: black;
+}
